@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myassistant.HlinkController">
+   <children>
+      <WebView fx:id="browser_var" layoutX="14.0" layoutY="83.0" prefHeight="235.0" prefWidth="555.0" />
+      <ImageView fx:id="dp" fitHeight="129.0" fitWidth="153.0" layoutX="34.0" layoutY="19.0" onMouseClicked="#visitWeb" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/DELL/Downloads/How-to-use-semi-log-graph-paper.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

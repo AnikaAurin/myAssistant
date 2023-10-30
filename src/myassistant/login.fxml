@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myassistant.loginController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane prefHeight="466.0" prefWidth="627.0">
+         <children>
+            <TabPane layoutX="25.0" layoutY="14.0" prefHeight="356.0" prefWidth="470.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Login                        ">
+                  <content>
+                    <AnchorPane disable="true" minHeight="0.0" minWidth="0.0" prefHeight="185.0" prefWidth="247.0">
+                           <children>
+                              <PasswordField fx:id="password" alignment="CENTER" layoutX="151.0" layoutY="136.0" promptText="password" />
+                              <Button fx:id="login" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="200.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleLoginAction" text="login" textAlignment="CENTER">
+                                 <effect>
+                                    <Reflection bottomOpacity="0.16" />
+                                 </effect>
+                              </Button>
+                              <TextField fx:id="username" alignment="CENTER" layoutX="152.0" layoutY="70.0" promptText="username" />
+                              <Label fx:id="login_status" alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="93.0" prefHeight="107.0" prefWidth="134.0" textAlignment="CENTER" textFill="#e50808" wrapText="true">
+                                 <font>
+                                    <Font name="Chiller" size="29.0" />
+                                 </font>
+                                 <effect>
+                                    <Reflection />
+                                 </effect>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="sign up                                    ">
+                  <content>
+                    <AnchorPane disable="true" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="116.0" layoutY="30.0" promptText="fullName" />
+                              <TextField layoutX="116.0" layoutY="82.0" promptText="mail" />
+                              <TextField fx:id="new_user" layoutX="116.0" layoutY="135.0" promptText="username" />
+                              <PasswordField fx:id="new_userpass" layoutX="116.0" layoutY="190.0" promptText="pass" />
+                              <Button fx:id="create" layoutX="351.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleCreateAction" text="create" />
+                              <Label fx:id="signup_status" alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" layoutY="61.0" prefHeight="68.0" prefWidth="136.0" textAlignment="CENTER" textFill="#fa0202" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
